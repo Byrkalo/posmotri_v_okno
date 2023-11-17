@@ -182,15 +182,19 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 3px;
-}
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
   margin-top: 5px;
+}
+
+.search-form__labe:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__textfield {
@@ -208,6 +212,11 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+  outline-offset: 0;
 }
 
 .search-form__checkbox + .search-form__pseudo-checkbox {
